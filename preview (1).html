@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic Site</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+height:100vh;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+/* glowing title */
+.title{
+font-size:40px;
+letter-spacing:6px;
+margin-bottom:30px;
+text-shadow:
+0 0 5px white,
+0 0 10px white,
+0 0 20px white;
+}
+
+/* card */
+.card{
+background:rgba(0,0,0,0.7);
+border:1px solid white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+width:320px;
+backdrop-filter:blur(5px);
+box-shadow:
+0 0 10px white,
+0 0 25px white inset;
+}
+
+.card h2{
+margin-bottom:15px;
+text-shadow:0 0 10px white;
+}
+
+.card p{
+opacity:0.8;
+margin-bottom:20px;
+}
+
+/* glowing button */
+.btn{
+display:inline-block;
+padding:12px 25px;
+border:1px solid white;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:0.3s;
+box-shadow:0 0 10px white;
+}
+
+.btn:hover{
+background:white;
+color:black;
+box-shadow:
+0 0 20px white,
+0 0 40px white;
+}
+
+/* discord bottom */
+.discord{
+position:fixed;
+bottom:20px;
+}
+
+.discord a{
+text-decoration:none;
+padding:12px 25px;
+border:1px solid white;
+color:white;
+border-radius:8px;
+box-shadow:0 0 10px white;
+transition:0.3s;
+}
+
+.discord a:hover{
+background:white;
+color:black;
+box-shadow:0 0 30px white;
+}
+
+/* balls */
+.ball{
+position:absolute;
+width:20px;
+height:20px;
+border-radius:50%;
+background:white;
+box-shadow:
+0 0 10px white,
+0 0 30px white;
+animation:float linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translate(0,0);
+}
+50%{
+transform:translate(200px,-200px);
+}
+100%{
+transform:translate(-200px,200px);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">COSMIC</div>
+
+<div class="card">
+<h2>IMMORTAL</h2>
+<p>A collection of powerful methods.</p>
+<a href="#" class="btn">GO TO SITE</a>
+</div>
+
+<div class="discord">
+<a href="#">Discord Server</a>
+</div>
+
+<!-- glowing bouncing balls -->
+<div class="ball" style="top:10%; left:10%; animation-duration:12s;"></div>
+<div class="ball" style="top:70%; left:80%; animation-duration:18s;"></div>
+<div class="ball" style="top:40%; left:30%; animation-duration:15s;"></div>
+<div class="ball" style="top:80%; left:20%; animation-duration:20s;"></div>
+<div class="ball" style="top:20%; left:70%; animation-duration:17s;"></div>
+
+</body>
+</html>
